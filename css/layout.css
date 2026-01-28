@@ -42,6 +42,7 @@ header .inner h1 {
   text-align: center;
   background: url(../img/sec-1-bg.png) no-repeat center/cover;
   min-height: 100vh;
+  z-index: 0;
 }
 .sec-1 .tit-wrap {
   color: #fff;
