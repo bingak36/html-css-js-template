@@ -256,10 +256,10 @@ font-size: clamp(10px, 4vw, 25px);
  height: 650px;
  position: relative;
 }
-.sec-5 h2.tit {
+.sec-5 h1 {
  font-size: 60px;
 }
-.sec-5-content-wrap {
+.sec-5-wrap {
  position: relative;
  height: 100%;
  z-index: 0;
@@ -327,7 +327,7 @@ font-size: clamp(10px, 4vw, 25px);
  justify-content: center;
  font-size: 17px;
  min-width: 150px;
-
+color: #ffffff;
  align-items: center;
 }
 .sec-5-menu li a span:first-child{
@@ -336,9 +336,6 @@ font-size: clamp(10px, 4vw, 25px);
 .sec-5-menu li.active a {
  background-color: #7044c2;
  color: #fff;
-}
-.sec-5-menu li span {
- color: #ffffff;
 }
 
 

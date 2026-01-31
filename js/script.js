@@ -1,32 +1,22 @@
-// alert("hello javascript")
-
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const fixedArrow = document.querySelector(".arrow");
 const mobNavBtn = document.querySelector(".menu-btn");
-const navList = document.querySelectorAll(".nav-list li");
-
-// [0,1,2,3]
+const navList = document.querySelector("header ul");
 
 navList.forEach((btn, i) => {
  btn.addEventListener("click", (e) => {
   e.preventDefault();
   console.log(document.querySelector(`#sec-${i + 1}`));
-
-
   document.querySelector(`#sec-${i + 1}`).scrollIntoView({
     behavior:'smooth'
   })
  });
 });
 
-// classList.toggle() 주체 body
-
-// console.log(fixedArrow)
-
 mobNavBtn.addEventListener("click", (e) => {
- e.preventDefault();
- body.classList.toggle("mob-nav-open");
+  e.preventDefault();
+  navList.classList.toggle("on");
 });
 
 window.addEventListener("scroll", () => {
@@ -65,10 +55,11 @@ function reset() {
  }
 }
 
+
 sec5MenuList.forEach((menu, index) => {
  menu.addEventListener("click", (e) => {
     e.preventDefault()
-  // console.log(menu,index)
+
   reset();
   init(index);
  });
