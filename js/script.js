@@ -3,15 +3,18 @@ const header = document.querySelector("header");
 const fixedArrow = document.querySelector(".arrow");
 const mobNavBtn = document.querySelector(".menu-btn");
 const navList = document.querySelector("header ul");
+const navBtns = document.querySelectorAll("header ul li");
 
-navList.forEach((btn, i) => {
- btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log(document.querySelector(`#sec-${i + 1}`));
-  document.querySelector(`#sec-${i + 1}`).scrollIntoView({
-    behavior:'smooth'
-  })
- });
+navBtns.forEach((btn, i) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetSection = document.querySelector(`#sec-${i + 1}`);
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
 });
 
 mobNavBtn.addEventListener("click", (e) => {
