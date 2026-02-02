@@ -215,11 +215,9 @@ header .menu-btn .menu-line:nth-child(3) {
 }
 .sec-bg-1 {
   background: url(../img/sec-3-bg-1.png) no-repeat center/cover;
-  background-color: red !important;
 }
 .sec-bg-2 {
   background: url(../img/sec-3-bg-2.png) no-repeat center/cover;
-  background-color: blue !important;
 }
 .sec-bg-3 {
   background: url(../img/sec-3-bg-3.png) no-repeat center/cover;
