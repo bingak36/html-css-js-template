@@ -72,8 +72,8 @@ sec5MenuList.forEach((menu, index) => {
 var swiper = new Swiper(".sec-3-container", {
   slidesPerView: 1,
   loop: true,
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 1000,
+  //   disableOnInteraction: false,
+  // },
 });
