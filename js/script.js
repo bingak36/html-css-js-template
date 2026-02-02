@@ -39,7 +39,7 @@ fixedArrow.addEventListener("click", () => {
 
 
 const sec5MenuList = document.querySelectorAll(".sec-5-menu li");
-const sec5ContentList = document.querySelectorAll(".sec-5-content-wrap .content");
+const sec5ContentList = document.querySelectorAll(".sec-5-wrap .content");
 let crr = 0;
 
 
@@ -66,4 +66,14 @@ sec5MenuList.forEach((menu, index) => {
   reset();
   init(index);
  });
+});
+
+
+var swiper = new Swiper(".sec-3-container", {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
 });
